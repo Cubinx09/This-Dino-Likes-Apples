@@ -1,5 +1,6 @@
 extends Area2D
-
-func _on_body_entered(_body: Node2D) -> void:
+var player = "player.tscn
+"
+func _on_body_entered(_player):
 	queue_free()
-	print('mmm...money.')
+	print("+1 moneys")
