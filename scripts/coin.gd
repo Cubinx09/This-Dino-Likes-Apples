@@ -1,6 +1,5 @@
 extends Area2D
-var player = "player.tscn
-"
-func _on_body_entered(_player):
+
+func _on_body_entered(_body):
 	queue_free()
 	print("+1 moneys")

@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://c0muhjnm7yd1y" path="res://scripts/door.gd" id="1_uvdjg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uvdjg"]
+size = Vector2(22, 20)
 
 [node name="door" type="Area2D"]
 collision_mask = 2
@@ -17,3 +18,4 @@ position = Vector2(0, 6)
 shape = SubResource("RectangleShape2D_uvdjg")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

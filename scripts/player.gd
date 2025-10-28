@@ -2,8 +2,8 @@ extends CharacterBody2D
 const SPEED = 140.0
 const SUPERSPEED = 140.0*1.5
 const JUMP_VELOCITY = -285.0
-
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
+
 
 func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("left", "right",)
@@ -42,3 +42,4 @@ func _physics_process(delta: float) -> void:
 		animated_sprite.play('jump')
 		
 	move_and_slide()
+	
