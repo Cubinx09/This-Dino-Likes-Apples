@@ -163,7 +163,7 @@ animations = [{
 radius = 4.0
 height = 16.0
 
-[node name="player" type="CharacterBody2D" groups=["Player"]]
+[node name="player" type="CharacterBody2D"]
 collision_layer = 2
 script = ExtResource("1_g2els")
 
@@ -176,6 +176,6 @@ autoplay = "default"
 shape = SubResource("CapsuleShape2D_fjrip")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4, 4)
+zoom = Vector2(3, 3)
 limit_bottom = 100
 position_smoothing_enabled = true
